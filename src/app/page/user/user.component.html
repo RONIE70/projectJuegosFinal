@@ -1,0 +1,60 @@
+<!--
+
+<br><br><br>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+<body>
+<div class="text">
+<h1>Usuarios</h1>
+</div>
+<div class="container" >
+  <div class="table1"  border = "1">
+    <table>
+      <tr>
+        <th>Email</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Suscripcion</th>
+
+      </tr>
+
+      <div *ngIf="this.usuarios">
+         <tr
+          *ngFor="
+            let punto of this.usuarios;
+            let i = index;
+            let impar = odd;
+            let par = even
+          "
+          [ngClass]="{ azul: par, verde: impar }"
+        >
+
+        <td><p>{{this.identificadorUsuario}}</p></td>
+        <td><p>{{ this.usuarios[i]['nombre'] }}</p></td>
+        <td><p>{{ this.usuarios[i]['apellido'] }} </p></td>
+        <td><p>{{ this.usuarios[i]['tipo_suscripcion'] }}</p></td>
+
+      </div>
+
+
+
+    </table>
+    <div class="wrapper">
+      <div class="wrapper2">
+        <div class="grid-item2">
+          <button class="btn" routerLink="../inicio">Menu</button>
+          </div></div></div>
+
+
+
+<router-outlet></router-outlet>
+
+  </div>
+</div>
+</body>
+ -->
